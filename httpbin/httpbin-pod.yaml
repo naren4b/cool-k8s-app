@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: httpbin
+  name: httpbin
+spec:
+  containers:
+  - image: kennethreitz/httpbin
+    name: httpbin
+    ports:
+    - containerPort: 80
